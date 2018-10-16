@@ -14,8 +14,8 @@ class Controller {
   // Load view
   public function view($view, $data = []) {
     // Chechk for view file
-    if(file_exists("../app/views".$view.".php")) {
-      require_once "../app/views".$view.".php";
+    if(file_exists("../app/views/".$view.".php")) {
+      require_once "../app/views/".$view.".php";
     } else {
       // View does not exists
       die("View does not exists");
